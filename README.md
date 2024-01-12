@@ -4,20 +4,8 @@
 
 Una vez clonado el repo y con la app corriendo:
 
-- Configure the top-level `parserOptions` property like this:
+- Darle estilo al botón de Counter.tsx, utilizando styled components. Para eso importarlo de un archivo `Counter.style.ts`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Abrir la consola de las devs tools. Cada vez que incrementamos el contador, se dispara una rerenderización de los dos componentes hijos: BigCountNumber y Decoration. Cómo podemos hacer para que Decoration no se rerenderice?
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- En el componente BigCountNumber tenemos un molesto error de typescript. Cómo podemos resolverlo facilmente.
