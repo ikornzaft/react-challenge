@@ -5,7 +5,7 @@ import BigCountNumber from './BigCountNumber';
 
 function Counter() {
   const [count, setCount] = React.useState(0);
-  
+
   return (
     <main>
       <BigCountNumber count={count} />
