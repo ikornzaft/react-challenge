@@ -12,4 +12,4 @@ function BigCountNumber({ count }) {
   );
 }
 
-export default React.memo(BigCountNumber);
+export default BigCountNumber;
